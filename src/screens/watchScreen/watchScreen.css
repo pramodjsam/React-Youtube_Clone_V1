@@ -1,0 +1,12 @@
+.watchScreen__player {
+  height: 60vh;
+  background-color: #353935;
+  width: 100%;
+  margin-bottom: 2rem;
+}
+
+@media screen and (max-width: "520px") {
+  .watchScreen__player {
+    height: 35vh;
+  }
+}

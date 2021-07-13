@@ -1,0 +1,94 @@
+@import "../../index.css";
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 3rem;
+  height: 10vh;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  background-color: var(--black-primary);
+}
+
+.header__menu {
+  display: none;
+}
+
+.header__logo {
+  height: 30px;
+  width: 30px;
+  object-fit: contain;
+  display: block;
+}
+
+.header form {
+  flex: 0.6;
+  display: flex;
+  padding: 0.1rem;
+  margin: 0 1rem;
+  border-radius: 3px;
+  border: 1.2px solid;
+  background-color: var(--black-secondary);
+}
+
+.header form input {
+  width: 100%;
+  border: none;
+  font-weight: 500;
+  background: transparent;
+  padding: 0.3rem;
+  color: var(--text-color);
+}
+
+.header form input:focus {
+  outline: none;
+}
+
+.header form button {
+  padding: 0 1.25rem;
+  background: transparent;
+  color: var(--text-color);
+  border: none;
+}
+
+.header form button:focus {
+  outline: none;
+}
+
+.header__icons {
+  flex: 0.15;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.header__icons img {
+  width: 40px;
+  border-radius: 50%;
+  object-fit: contain;
+  margin-left: 5px;
+}
+
+@media (max-width: 520px) {
+  .header {
+    padding: 1rem;
+  }
+
+  .header form {
+    flex: 1;
+  }
+
+  .header__logo {
+    display: none;
+  }
+
+  .header__menu {
+    display: block;
+  }
+
+  .header__icons > *:not(img) {
+    display: none;
+  }
+}

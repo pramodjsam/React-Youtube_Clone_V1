@@ -1,0 +1,32 @@
+@import "../../index.css";
+
+.categoriesBar {
+  padding: 0.5rem 0;
+  font-size: 0.8rem;
+  display: flex;
+  overflow-x: scroll;
+  scrollbar-width: none;
+}
+
+.categoriesBar::-webkit-scrollbar {
+  width: 0px;
+}
+
+.categoriesBar span {
+  margin-right: 1rem;
+  padding: 0.5rem;
+  white-space: nowrap;
+  border: 1.5px solid var(--text-color);
+  border-radius: 999px;
+  cursor: pointer;
+}
+
+.categoriesBar span:hover {
+  background-color: #374a59;
+}
+
+.categoriesBar span.active {
+  color: #fff;
+  background-color: #606060;
+  border-color: var(--border-color);
+}

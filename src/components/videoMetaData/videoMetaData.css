@@ -1,0 +1,47 @@
+@import "../../index.css";
+
+.videoMetaData__top span {
+  cursor: pointer;
+}
+
+.videoMetaData__channel {
+  border-top: 0.2px solid var(--border-color);
+  border-bottom: 0.2px solid var(--border-color);
+}
+
+.videoMetaData__channel img {
+  height: 50px !important;
+  width: 50px !important;
+  margin-right: 10px;
+}
+
+.videoMetaData__channel button {
+  background-color: red;
+  color: #fff;
+  border-radius: 0;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.videoMetaData__channel button:hover {
+  background-color: #fff;
+}
+
+.videoMetaData__channel button:focus {
+  border: none;
+  outline: none;
+}
+
+.videoMetaData__description {
+  font-size: 0.9rem;
+  white-space: pre-line;
+  border-bottom: 0.2px solid var(--border-color);
+}
+
+.videoMetaData__description .showMoreText {
+  text-decoration: none;
+  display: block;
+  margin: 1rem 0;
+  color: #fff;
+  font-weight: 500;
+}
